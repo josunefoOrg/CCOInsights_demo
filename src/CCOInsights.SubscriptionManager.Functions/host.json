@@ -1,0 +1,21 @@
+{
+  "version": "2.0",
+  "extensions": {
+    "durableTask": {
+      "maxConcurrentActivityFunctions": 3,
+      "maxConcurrentOrchestratorFunctions": 3,
+      "hubName": "CCOInsights"
+    }
+  },
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    },
+    "logLevel": {
+      "CCOInsights.SubscriptionManager": "Information"
+    }
+  }
+}
